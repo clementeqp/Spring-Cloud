@@ -45,4 +45,4 @@ management:
     web:
       exposure:
         #si ponemos * habilitamos todos los endpoints si quermemos solo unos cuantos se enumera separados por comas: env, beans...etc
-        include: "*"
+        include: *
