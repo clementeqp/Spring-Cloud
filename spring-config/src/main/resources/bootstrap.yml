@@ -1,0 +1,16 @@
+
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          # Url del repo
+          uri: https://github.com/clementeqp/Spring-Config-Service.git
+          # Carpeta donde estan los archivos de configuracion
+          searchPaths: config-data
+
+
+
