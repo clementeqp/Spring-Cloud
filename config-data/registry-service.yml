@@ -11,6 +11,5 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
-
-  server:
-    wait-time-in-ms-when-sync-empty: 0
+#Si abrir el mecanismo de autoprotección
+eureka.server.enable-self-preservation=false
