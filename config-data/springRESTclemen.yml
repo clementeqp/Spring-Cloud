@@ -40,15 +40,15 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8082/eureka/
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        #actuator (pegar y probar antes de admin)
-#        #si ponemos * habilitamos todos los endpoints si quermemos solo unos cuantos se enumera separados por comas: env, beans...etc
-#        include:*
+management:
+  endpoints:
+    web:
+      exposure:
+        #actuator (pegar y probar antes de admin)
+        #si ponemos * habilitamos todos los endpoints si quermemos solo unos cuantos se enumera separados por comas: env, beans...etc
+        include:*
 #  endpoint:
 #    health:
 #      show-details=always
-management.endpoints.web.exposure.include="*"
-  #management.endpoint.health.show-details=always
+#management.endpoints.web.exposure.include="*"
+#management.endpoint.health.show-details=always
