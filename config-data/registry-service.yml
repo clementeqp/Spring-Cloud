@@ -12,4 +12,5 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 #Si abrir el mecanismo de autoprotección
-eureka.server.enable-self-preservation=false
+  server:
+    enable-self-preservation:false
