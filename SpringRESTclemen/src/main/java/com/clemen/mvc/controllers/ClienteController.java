@@ -28,7 +28,7 @@ public class ClienteController {
      *
      * Crear un cliente pasado por JSON
      */
-    @PostMapping(URL)
+    @PostMapping("/api/crearCliente")
     public ResponseEntity<Cliente> crearCliente(@RequestBody Cliente cliente){
         if(cliente.getId()!=null)
             return ResponseEntity.badRequest().build();
@@ -64,7 +64,7 @@ public class ClienteController {
     return ResponseEntity.notFound().build();
     }
 
-    @DeleteMapping(URL + "/{id}")
+    @DeleteMapping("/api/borrarCliente/{id}")
     public ResponseEntity<Cliente> borrarCliente(@PathVariable Long id){
         Cliente cliente = clienteService.buscarPorId(id);
 
